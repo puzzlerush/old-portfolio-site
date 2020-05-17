@@ -5,16 +5,21 @@
         url('assets/fonts/ff6font.ttf') format('truetype');
 }
 
+html, body, .container {
+	height: 100%;
+}
+
 .home-wrapper {
-	background-image: url("assets/bg.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+	overflow-y: auto;
+	background: url("assets/bg.png") no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	background-color: #000;
 	text-align: center;
 	font-family: "ff6";
-	height: 100vh;
-	padding: 0;
-	margin: 0;
+	height: 100%;
 	padding-top: 2vh;
 }
 
@@ -22,7 +27,7 @@ a img#button {
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	right: 0;
+	right: 50px;
 	top: 0;
 }
 
@@ -32,7 +37,7 @@ a img#button {
 	justify-items: center;
 	align-items: end;
 	position-top: 50%;
-	margin-top: 20%;
+	margin-top: 15%;
 	font-size: 2em;
 	color: #FFF;
 }
@@ -111,6 +116,9 @@ a img#button {
 }
 
 @media (max-width: 500px) {
+	.home-wrapper {
+		height: 100%;
+	}
 	.grid-container {
 		grid-template-columns: 100%;
 	}
