@@ -1,0 +1,127 @@
+body.subpage {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body.subpage p {
+	padding-top: 2vh;
+	font-size: 1.25em;
+	color: var(--text-color);
+}
+
+body.subpage a {
+	--underline-height: 5%;
+  	--underline-color: #FFA500;
+  	color: var(--underline-color);
+}
+
+body.subpage a:hover {
+	text-decoration: none;
+}
+
+body.subpage div.container {
+	padding-top: 10%;
+	width: 40%;
+	min-width: 600px;
+}
+
+body.subpage h1 {
+	font-size: 4em;
+  	font-weight: bold;
+  	color: --text-color;
+  	--underline-height: 10%;
+  	--underline-color: var(--text-color);
+}
+
+
+.left {
+    position: relative;
+    display: inline-block;
+}
+
+.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: var(--underline-height);
+  bottom: 0;
+  left: 0;
+  background-color: var(--underline-color);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+}
+
+.card {
+	display: inline-block;
+	height: 10vh;
+	width: 10vh;
+	margin-top: 1vw;
+	margin-right: 1vw;
+}
+
+.card:hover {
+	animation: spin 1s cubic-bezier(0.2, 0.8, 0.8, 1);
+}
+
+.linkedin {
+  background: url("assets/linkedin_logo.png");
+  background-size: 100% 100%;
+}
+
+.github {
+  background: url("assets/github_logo.png");
+  background-size: 100% 100%;
+}
+
+@media (max-width: 700px) {
+	body.subpage div.container {
+		width: 80%;
+		min-width: 400px;
+	}
+}
+
+@media (max-width: 400px) {
+	body.subpage div.container {
+		width: 80%;
+		min-width: 200px;
+		text-align: justify;
+		word-wrap: break-word;
+	}
+	body.subpage p {
+		padding-top: 2vh;
+	}
+}
+
+img.company-logo {
+  height: 40px;
+  width: auto;
+}
+
+.experience {
+	margin-top: 2vh;
+}
+
+body.subpage h2 {
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+.media-body h5 {
+	display: inline-block;
+} 
+
+.date {
+	float: right;
+}

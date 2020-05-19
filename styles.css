@@ -11,7 +11,7 @@ html, body, .container {
 
 .home-wrapper {
 	overflow-y: auto;
-	background: url("assets/bg.png") no-repeat;
+	background: url("assets/bg_resized.png") no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,7 +27,7 @@ a img#button {
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	right: 50px;
+	right: 20px;
 	top: 0;
 }
 
@@ -126,6 +126,6 @@ a img#button {
 
 @media (max-width: 400px) {
 	.textbox{
-		font-size: 1.75em;
+		font-size: 1.25em;
 	}
 }
