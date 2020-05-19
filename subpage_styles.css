@@ -123,8 +123,8 @@ background: url("assets/resume_logo.png");
 }
 
 img.company-logo {
-  height: 40px;
-  width: auto;
+  height: auto;
+  width: 50px;
 }
 
 .experience {
@@ -142,4 +142,11 @@ body.subpage h2 {
 
 .date {
 	float: right;
+}
+
+@media (max-width: 450px) {
+	.date {
+		display: block;
+		float: none;
+	}
 }
