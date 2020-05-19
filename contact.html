@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,56 +9,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="subpage_styles.css">
+    <link rel="stylesheet" href="menu_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Kevin Ding</title>
   </head>
-  <body>
-  	<div class="home-wrapper">
-  	<div class="container">
-		 <div class="textbox">Welcome to Kevin's website! <br> Choose a scenario!</div>
-		 <div class="grid-container">
-		  	<div class="grid-item">
-		  		<a href="about.html"><div class="character" id="mog"></div></a>
-		  		<br>About
-		  	</div>
+  <body class="subpage" style="--bg-color: #8600b3; --text-color: #FFF; background-color: var(--bg-color); color: var(--text-color);">
+    <div class="container">
+      <nav role="navigation">
+        <div id="menuToggle">
+          
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
 
-		  	<div class="grid-item">
-		  		<div class="character" id="celes"></div>
-		  		<br>Work
-		  	</div>
+          <ul id="menu">
+            <a href="index.html"><li>home</li></a>
+            <a href="about.html"><li>about</li></a>
+            <a href="work.html"><li>work</li></a>
+            <a href="projects.html"><li>projects</li></a>
+            <a href="contact.html"><li>contact</li></a>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="left">contact</h1><br>
+      <div class="grid-container">
+        <div class="email card mt-5"></div>
+        <div class="linkedin card mt-5"></div>
+        <div class="github card mt-5"></div>
+        <div class="resume card mt-5"></div>
+      </div>
 
-		  	<div class="grid-item">
-		  		<div class="character" id="edgar"></div>
-		  		<br>Projects
-		  	</div>
-
-		  	<div class="grid-item">
-		  		<div class="character" id="locke"></div>
-		  		<br>Contact
-		  	</div>
-	    </div>
-  	</div>
-    </div>
-  	<audio preload="auto" id="music" loop>
-		<source src="assets/menu_music.mp3" type="audio/mpeg">
-	</audio>
-	<a onclick="togglePlay()"><img id="button" src="assets/audio_off.png"></a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-    	var audio = document.getElementById("music");
-    	var button = document.getElementById("button");
-		function togglePlay() {
-			if (audio.paused) {
-				audio.play();
-				button.src="assets/audio_on.png";
-			} else {
-				audio.pause();
-				button.src="assets/audio_off.png";
-			}
-		};
-    </script>
   </body>
 </html>
