@@ -1,4 +1,5 @@
 #menuToggle {
+  height: 100%;
   display: block;
   position: absolute;
   top: 20px;
@@ -84,7 +85,7 @@
 #menu {
   position: absolute;
   width: 200px;
-  height: calc(100vh + 53px);
+  height: calc(100% + 73px);
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
