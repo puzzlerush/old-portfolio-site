@@ -43,6 +43,7 @@ a img#button {
 }
 
 .grid-item {
+	text-shadow: 5px 5px #000;
 	padding-top: 40px;
 	width: 100%
 }
