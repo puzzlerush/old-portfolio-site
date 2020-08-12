@@ -34,33 +34,75 @@
         </div>
       </nav>
       <h1 class="left">projects</h1><br>
-
+        
+      <div class="media mt-4">
+        <img class="mr-3 company-logo" src="" alt="">
+        <div class="media-body mb-4">
+          <h5 class="mt-0 font-weight-bold"><a class="left" href="http://panchiraino.herokuapp.com/">Punchline Guesser</a></h5>
+          <span class="date">Jul 2020</span>
+          <h6>Panchiraino is a web-based punchline guessing game. Players are given a random joke setup, with the objective to guess the correct punchline.</h6>
+          <ul>
+          	<li>
+                Developed the backend with <strong>Python/Django</strong>, working with a <strong>SQLite</strong> database in development, and a <strong>PostgreSQL</strong> database in production
+                <ul>
+                  <li>Utilized <strong>sessions</strong> framework to support anonymous users</li>
+                  <li>Implemented account creation/authentication, as well as joke create, update, delete functionality using built-in class-based generic views </li>
+                </ul>
+            </li>
+              
+            <li>Designed the frontend with <strong>HTML/CSS/Bootstrap/jQuery</strong></li>
+          	<li>Used <strong>FuzzyWuzzy</strong> and <strong>nltk</strong> to determine the semantic similarity between the expected punchline and the player's guess</li>
+            <li>Loaded Kaggle joke dataset into the database using Python scripts</li>
+            <li>Customized admin page for easy site maintenance</li>
+          </ul>
+          <a class="left" href="https://github.com/tacticaltofu/guesser">source code</a>
+        </div>
+      </div>
+        
+      <div class="media mt-4">
+        <img class="mr-3 company-logo" src="assets/video_logo.png" alt="">
+        <div class="media-body mb-4">
+          <h5 class="mt-0 font-weight-bold"><a class="left" href="https://videoripper.herokuapp.com/">VidRip</a></h5>
+          <span class="date">Jul 2020</span>
+          <h6>VideoRipper is a lightweight web application that fetches and plays back the raw video from a streaming site.</h6>
+          <ul>
+          	<li>Developed the backend with <strong>Python/Django</strong></li>
+          	<li>Used <strong>Selenium WebDriver</strong> to scrape the raw video URL from the specified streaming site, and return it to be displayed in the Django view</li>
+          	<li>Deployed to <strong>Heroku</strong>, using the chrome and chromedriver buildpacks</li>
+          </ul>
+          <a class="left" href="https://github.com/tacticaltofu/videoripper">source code</a>
+        </div>
+      </div>
+        
       <div class="media mt-4">
         <img class="mr-3 company-logo" src="assets/instagram_logo.png" alt="">
-        <div class="media-body">
+        <div class="media-body mb-4">
           <h5 class="mt-0 font-weight-bold">InstaClout</h5>
           <span class="date">Jul 2019</span>
           <h6>InstaClout is an instagram bot for gaining real followers.</h6>
           <ul>
           	<li>Wrote a script to automatically follow users based on mutual followers, using <strong>Python</strong> and <strong>Selenium WebDriver</strong></li>
           	<li>Utilized multithreading to run multiple instances of the bot concurrently, increasing the rate at which followers were gained</li>
-          	<li>Increased account followers by 1500 in the span of 1 week, with an engagement rate of 33%</li>
+          	<li>Increased account followers by 1500, with an engagement rate of 33%</li>
           </ul>
           <a class="left" href="https://github.com/tacticaltofu/InstaClout">source code</a>
         </div>
       </div>
-
+        
       <div class="media mt-4">
-        <div class="media-body">
+        <div class="media-body mb-4">
           <h5 class="mt-0 font-weight-bold">Mini Projects</h5>
           <ul>
           	<li>
-          		<a href="https://github.com/tacticaltofu/snonks">Snonks</a> - My vanilla Javascript implementation of snake. <a class="left" href="snonks">Demo it here!</a>
+          		<a href="https://github.com/tacticaltofu/snonks">Snonks</a> - My vanilla Javascript implementation of snake. <a class="left" href="snonks">Demo</a>
+          	</li>
+            <li>
+          		<a href="https://github.com/tacticaltofu/tts-bot">Chad bot</a> - A text-to-speech Discord bot written with Python and the Google Translate API.
           	</li>
           </ul>
         </div>
       </div>
-
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
