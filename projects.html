@@ -34,9 +34,31 @@
         </div>
       </nav>
       <h1 class="left">projects</h1><br>
-        
+      
       <div class="media mt-4">
-        <img class="mr-3 company-logo" src="" alt="">
+        <div class="media-body mb-4">
+          <h5 class="mt-0 font-weight-bold"><a class="left" href="http://drivetest-openings.herokuapp.com/">DriveTest Openings</a></h5>
+          <span class="date">Aug 2020</span>
+          <h6>DriveTest Openings is a content aggregation website built with the <strong>MERN</strong> stack. It displays all available dates for booking a road test in an easy to search table.</h6>
+          <ul>
+            <li>
+                Used <strong>NodeJS/Express</strong> for the backend, working with a <strong>MongoDB</strong> database using <strong>Mongoose</strong>
+            </li>
+            <li>
+              Built the frontend with <strong>ReactJS/ReactDOM</strong>
+              <ul>
+                <li>Implemented client-side filtering and sorting, decreasing server load and time taken for the action </li>
+              </ul>
+            </li>
+            <li>Worked with the Pug templating engine to design an <a href="http://drivetest-openings.herokuapp.com/openings/select">alternative lightweight front-end</a> to improve accessibility</li>
+            <li>Wrote a <a href="https://github.com/tacticaltofu/drivetest-scraper">Python script</a> to scrape data from <a href="https://drivetest.ca/">drivetest.ca</a>, and used <strong>PyMongo</strong> to insert the data into a <strong>MongoDB Atlas</strong> database</li>
+
+          </ul>
+          <a class="left" href="https://github.com/tacticaltofu/drivetest-openings">source code</a>
+        </div>
+      </div>
+
+      <div class="media mt-4">
         <div class="media-body mb-4">
           <h5 class="mt-0 font-weight-bold"><a class="left" href="http://panchiraino.herokuapp.com/">Punchline Guesser</a></h5>
           <span class="date">Jul 2020</span>
